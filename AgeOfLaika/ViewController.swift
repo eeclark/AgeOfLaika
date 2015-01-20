@@ -12,6 +12,7 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var dogYearsLabel: UILabel!
     @IBOutlet weak var humanYearsTextField: UITextField!
+    @IBOutlet weak var pleaseEnterAValue: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,10 +25,18 @@ class ViewController: UIViewController {
     }
 
     @IBAction func convertToDogYearsButtonPressed(sender: UIButton) {
-        let humanYearsFromTextField = humanYearsTextField.text.toInt()!
-        dogYearsLabel.hidden = false
-        dogYearsLabel.text = "\(humanYearsFromTextField * 7)" + " dog years"
-        humanYearsTextField.resignFirstResponder()
+        if humanYearsTextField.text == "" {
+        pleaseEnterAValue.hidden = false
+        dogYearsLabel.hidden = true
+        }
+        else
+        {
+            let humanYearsFromTextField = humanYearsTextField.text.toInt()!
+            dogYearsLabel.text = "\(humanYearsFromTextField * 7)" + " dog years"
+            dogYearsLabel.hidden = false
+            pleaseEnterAValue.hidden = true
+            humanYearsTextField.resignFirstResponder()
+        }
     
     }
 
