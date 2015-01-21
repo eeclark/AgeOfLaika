@@ -16,7 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="laika.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="QOz-wy-B7a">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="hooter.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="QOz-wy-B7a">
                                 <rect key="frame" x="0.0" y="253" width="279" height="221"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Ml-i2-Xnp">
@@ -78,6 +78,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="laika.jpg" width="523" height="334"/>
+        <image name="hooter.jpg" width="1735" height="1481"/>
     </resources>
 </document>
